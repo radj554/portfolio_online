@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — RK</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS — sends email directly from the browser, no backend needed -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="myscripts.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span>RK</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+            <a href="contact.html" class="contact-btn">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="contact-page">
+
+        <div class="contact-info">
+            <p class="section-tag">CONTACT ME</p>
+            <h1>Let's Work<br>Together</h1>
+            <p>Feel free to reach out for projects, collaborations, or any questions. I usually respond within 24 hours.</p>
+
+            <div class="contact-boxes">
+                <a href="mailto:radjkewalbansing@icloud.com" class="contact-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>radjkewalbansing@icloud.com</span>
+                </a>
+                <a href="tel:+5978808765" class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+597 8808765</span>
+                </a>
+                <div class="contact-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Paramaribo, Suriname</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-side">
+            <form class="contact-form" id="contactForm" novalidate>
+
+                <div class="form-row">
+                    <input type="text"  id="fname"    name="from_name"  placeholder="Your Name"  required>
+                    <input type="email" id="femail"   name="from_email" placeholder="Your Email" required>
+                </div>
+
+                <input type="text" id="fsubject" name="subject" placeholder="Subject" required>
+
+                <textarea id="fmessage" name="message" placeholder="Your Message" maxlength="1000" required></textarea>
+                <div class="char-count" id="charCount">0 / 1000</div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <div class="spinner" id="spinner"></div>
+                    <span id="btnLabel">Send Message</span>
+                    <i class="fa-solid fa-paper-plane" id="btnIcon"></i>
+                </button>
+
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
