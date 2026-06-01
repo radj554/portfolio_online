@@ -674,3 +674,22 @@ header{
     }
 
 }
+
+.progress_1{
+    width: 95%;
+}
+.progress_2{
+    width: 60%;
+
+}
+
+.progress_3{
+    width:50%;
+}
+
+.progress_4{
+    width:100%;
+}
+.progress_5{
+    width:50%;
+}
